@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head><title>ZCC Test Pages</title></head>
+  <head>
+    <title>KE ZCC Test Page</title>
+    <style>
+      h1 {
+        color: #ff5c8d;
+      }
+      .todo {
+        text-decoration: line-through;
+        color: #999;
+      }
+      .todo::after {
+        content: " (not ready)";
+        font-style: italic;
+        color: #c00;
+        text-decoration: none;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Zoom Contact Center Test Pages</h1>
+    <h1>KE ZCC Test Page</h1>
     <ul>
       <li><a href="video.html">Schedule a video call</a></li>
-      <li><a href="voice.html">Schedule a voice call</a></li>
-      <li><a href="both.html">Both options</a></li>
+      <li class="todo">Schedule a voice call</li>
+      <li class="todo">Both options</li>
     </ul>
   </body>
 </html>
