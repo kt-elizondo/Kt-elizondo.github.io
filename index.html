@@ -33,9 +33,28 @@
     <h1>KE ZCC Test Page</h1>
     <ul>
       <li><a href="video.html">Schedule a video call</a></li>
-      <li><a href="voice.html">Schedule a voice call</li>
+      <li><a href="voice.html">Schedule a voice call</a></li>
       <li class="todo">Both options</li>
       <li class="bethany">🧪 <a href="bethanytest.html">Bethany test campaign</a></li>
     </ul>
+     <script>
+      const sparkles = ['✨', '⭐', '💫', '🌟'];
+
+      function createSparkle() {
+        const sparkle = document.createElement('div');
+        sparkle.className = 'sparkle';
+        sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
+        sparkle.style.left = Math.random() * 100 + 'vw';
+        sparkle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        sparkle.style.fontSize = (Math.random() * 15 + 15) + 'px';
+        document.body.appendChild(sparkle);
+
+        // Clean up after the animation finishes
+        setTimeout(() => sparkle.remove(), 6000);
+      }
+
+      // Create a new sparkle every 400ms
+      setInterval(createSparkle, 400);
+    </script>
   </body>
 </html>
