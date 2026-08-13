@@ -38,23 +38,6 @@
       <li class="bethany">🧪 <a href="bethanytest.html">Bethany test campaign</a></li>
     </ul>
     
-    <script>
-      const sparkles = ['✨', '⭐', '💫', '🌟'];
-
-      function createSparkle() {
-        const sparkle = document.createElement('div');
-        sparkle.className = 'sparkle';
-        sparkle.textContent = sparkles[Math.floor(Math.random() * sparkles.length)];
-        sparkle.style.left = Math.random() * 100 + 'vw';
-        sparkle.style.animationDuration = (Math.random() * 3 + 3) + 's';
-        sparkle.style.fontSize = (Math.random() * 15 + 15) + 'px';
-        document.body.appendChild(sparkle);
-
-        // Clean up after the animation finishes
-        setTimeout(() => sparkle.remove(), 6000);
-      }
-
-      setInterval(createSparkle, 350);
-    </script>
+    <iframe src="https://scheduler.zoom.us/f/ltyr5sea?embed=true" frameborder="0" style="width: 750px; height: 560px;"></iframe>
   </body>
 </html>
